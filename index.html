@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preload" href="./assets/font/Inter-VariableFont.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="./index.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header class=" header">
+            <nav class="nav">
+                <a class="nav__link" href="./index.html">
+                    <img class="nav__img" src="./imagenes/logo.svg" alt="Logo de Alura Latam">
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="process">
+                <textarea id="textarea" class="process__textarea paragraph" 
+                          placeholder="Ingrese el texto aqui" 
+                          title="Ingrese el texto aqui"></textarea>
+                
+                <p class="process__info">
+                    
+                  <span class="process__text">Solo letras minúsculas y sin acentos</span>
+                </p>
+                <div class="process__buttons">
+                    <button class="btn btn--fill" onclick="encriptar();">Encriptar</button>
+                    <button class="btn btn--outline" onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </div>
+            <div class="view">
+                <figure class="view__figure">
+                    <img class="view__img" src="./imagenes/elmuneco.svg" alt="Ilustración de una chica con una lupa buscando en documentos">
+                </figure>
+                <p class="view__title paragraph">Ningún mensaje fue encontrado</p>
+                <p class="view__paragraph paragraph">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                <button class="view__btn btn btn--outline" onclick="copiarTexto();">Copiar</button>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer__paragraph">Desarrollado por Diana Bravo<a class="footer__link" target="_blank" rel="noopener noreferrer"></a></p>
+    </footer>
+</body>
+</html>
